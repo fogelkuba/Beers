@@ -11,10 +11,10 @@ const router = new VueRouter({
     routes: [
         {path: '/discover', component: Discover}
     ]
-})
+});
 
 new Vue({
   el: '#app',
   router,
   render: h => h(App)
-})
+});

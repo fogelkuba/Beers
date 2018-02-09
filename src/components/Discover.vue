@@ -1,11 +1,41 @@
 <template>
     <div class="">
         <h3>Discover</h3>
+        <div class="col-md-12">
+            <div class="row">
+                <Beer
+
+                />
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
+    import Beer from './Beer.vue';
+
     export default {
-        
+        data(){
+            return {
+                items: []
+            };
+        },
+        watch:{
+
+        },
+        methods: {
+            fetchItems(){
+                this.items = [];
+                fetch('https://api.punkapi.com/v2/beers', {method: 'GET'})
+                .then(response => response.json)
+                .then(json => this.items.push(json))
+            }
+        },
+        created(){
+            this.fetchItems();
+        },
+        componets: {
+            Beer
+        }
     }
 </script>
