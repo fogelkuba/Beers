@@ -17,6 +17,9 @@
             return {
                 item: {}
             }
+        },
+        created(){
+            this.item = this.passedItem
         }
     }
 </script>

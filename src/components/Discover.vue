@@ -3,9 +3,12 @@
         <h3>Discover</h3>
         <div class="col-md-12">
             <div class="row">
-                <Beer
-
-                />
+                <!-- <Beer
+                    v-for="(item, index) in items"
+                    :key="index"
+                    :passed-item="item"
+                /> -->
+                {{items}}
             </div>
         </div>
     </div>
@@ -24,17 +27,19 @@
 
         },
         methods: {
+
             fetchItems(){
                 this.items = [];
                 fetch('https://api.punkapi.com/v2/beers', {method: 'GET'})
                 .then(response => response.json)
-                .then(json => this.items.push(json))
+                .then(json => this.items.push(json));
+                console.log(this.items);
             }
         },
         created(){
             this.fetchItems();
         },
-        componets: {
+        components: {
             Beer
         }
     }
