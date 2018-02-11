@@ -1,0 +1,16 @@
+body{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.item-card{
+    margin: 10px 0;
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    height: 90%;
+}
+
+.item-image{
+    max-height: 150px;
+}
