@@ -1,16 +1,49 @@
 body{
-    padding: 20px;
     box-sizing: border-box;
+    background-color: #efefef;
+    font-family: 'Futura', Helvetica, Arial, sans-serif;
 }
 
 .item-card{
     margin: 10px 0;
-    border: 2px solid grey;
     padding: 10px;
-    border-radius: 5px;
-    height: 90%;
+    height: 95%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+
+}
+.item-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.card-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .item-image{
-    max-height: 150px;
+    max-height: 200px;
+    margin: 25px auto;
+}
+h3.card-title{
+    width: 75%;
+    margin: 0 auto;
+    color: rgb(223, 201, 6);
+    position: relative;
+}
+.card-title:after{
+    content: '';
+    height: 3px;;
+    width: 50%;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(223, 201, 6);
+}
+.item-describtion{
+    color: #777;
 }
