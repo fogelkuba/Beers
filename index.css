@@ -10,7 +10,7 @@ body{
     height: 95%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
+    text-align: left;
     transition: 0.3s;
 
 }
@@ -21,7 +21,9 @@ body{
 .card-block{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: space-between;
+    height: 100%;
 }
 
 .item-image{
@@ -29,21 +31,23 @@ body{
     margin: 25px auto;
 }
 h3.card-title{
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     color: rgb(223, 201, 6);
+    text-align: left;
     position: relative;
+    font-size: 2.25em;
 }
 .card-title:after{
     content: '';
-    height: 3px;;
+    height: 4px;;
     width: 50%;
     position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translate(-50%);
+    bottom: -10px;
+    left: 0;
     background-color: rgb(223, 201, 6);
 }
 .item-describtion{
     color: #777;
+    text-align: center;
 }
