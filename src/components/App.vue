@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <div class="container">
-            Beers App
+            <h1>Beers <span>App</span></h1>
             <router-view>
             </router-view>
         </div>
