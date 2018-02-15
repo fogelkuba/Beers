@@ -5,12 +5,15 @@ body{
     padding: 20px 0;
 }
 h1{
-    color: #bbb;
+    color: #ccc;
     font-weight: bold;
     text-transform: uppercase;
 }
 h1 > span {
     color: rgb(223, 201, 6);
+}
+h2{
+    color: #ccc;
 }
 
 .item-card{
@@ -21,6 +24,7 @@ h1 > span {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: left;
     transition: 0.3s;
+    border-radius: 0 10px 0 10px;
 }
 .card-block{
     display: flex;
@@ -30,7 +34,6 @@ h1 > span {
     height: 100%;
 }
 .card-title{
-    flex-grow: 2;
     font-weight: bold;
     width: 100%;
     margin: 0 auto;

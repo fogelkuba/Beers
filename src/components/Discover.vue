@@ -10,7 +10,6 @@
                     :key="index"
                     :passed-item="item"
                 />
-                <!-- {{items}} -->
             </div>
         </div>
     </div>
