@@ -1,35 +1,40 @@
 body{
     box-sizing: border-box;
-    background-color: #efefef;
+    background-color: #333;
     font-family: 'Futura', Helvetica, Arial, sans-serif;
 }
-
 .item-card{
     margin: 10px 0;
     padding: 10px;
     height: 95%;
-    background-color: #fff;
+    background-color: #ddd;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: left;
     transition: 0.3s;
-
 }
 .item-card:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 .card-block{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: space-between;
+    align-items: center;
     height: 100%;
+}
+.item-describtion{
+    margin-top: 25px;
+    color: #777;
+    text-align: center;
 }
 
 .item-image{
-    max-height: 200px;
+    max-height: 150px;
     margin: 25px auto;
+    align-self: flex-end;
 }
+
 h1{
     color: #333;
     font-weight: bold;
@@ -60,8 +65,4 @@ p{
     bottom: -10px;
     left: 0;
     background-color: rgb(223, 201, 6);
-}
-.item-describtion{
-    color: #777;
-    text-align: center;
 }

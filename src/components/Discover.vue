@@ -1,6 +1,8 @@
 <template>
     <div class="">
-        <h3>Discover</h3>
+        <div class="container">
+            <h3>Discover</h3>
+        </div>
         <div class="col-md-12">
             <div class="row">
                 <Beer
