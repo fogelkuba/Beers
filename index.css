@@ -12,6 +12,23 @@ h1{
 h1 > span {
     color: rgb(223, 201, 6);
 }
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: scale(100%);
+}
+.navigation > a{
+    margin: 0 10px;
+    color: rgb(223, 201, 6);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.navigation > a:hover{
+    color: #ccc;
+}
 h2{
     color: #ccc;
 }

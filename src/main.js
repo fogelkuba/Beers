@@ -9,7 +9,9 @@ Vue.use(VueRouter);
 const router = new VueRouter({
     mode: 'history',
     routes: [
-        {path: '/discover', component: Discover}
+        {path: '/discover', component: Discover},
+        // {path: '/collection', component: Collection},
+        // {path: '/login', component: Login},
     ]
 });
 
