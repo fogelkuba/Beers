@@ -2,7 +2,17 @@ body{
     box-sizing: border-box;
     background-color: #333;
     font-family: 'Futura', Helvetica, Arial, sans-serif;
+    padding: 20px 0;
 }
+h1{
+    color: #bbb;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h1 > span {
+    color: rgb(223, 201, 6);
+}
+
 .item-card{
     margin: 10px 0;
     padding: 10px;
@@ -12,10 +22,6 @@ body{
     text-align: left;
     transition: 0.3s;
 }
-.item-card:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
 .card-block{
     display: flex;
     flex-direction: column;
@@ -23,27 +29,8 @@ body{
     align-items: center;
     height: 100%;
 }
-.item-describtion{
-    margin-top: 25px;
-    color: #777;
-    text-align: center;
-}
-
-.item-image{
-    max-height: 150px;
-    margin: 25px auto;
-    align-self: flex-end;
-}
-
-h1{
-    color: #333;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-h1 > span {
-    color: rgb(223, 201, 6);
-}
-h3.card-title{
+.card-title{
+    flex-grow: 2;
     font-weight: bold;
     width: 100%;
     margin: 0 auto;
@@ -52,11 +39,6 @@ h3.card-title{
     position: relative;
     font-size: 1.75em;
 }
-
-p{
-    margin: 0;
-}
-
 .card-title:after{
     content: '';
     height: 4px;;
@@ -65,4 +47,18 @@ p{
     bottom: -10px;
     left: 0;
     background-color: rgb(223, 201, 6);
+}
+.item-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.item-describtion{
+    color: #777;
+    text-align: center;
+    margin: 0;
+}
+
+.item-image{
+    max-height: 150px;
+    margin: 25px auto;
 }
