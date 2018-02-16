@@ -21,6 +21,15 @@ const router = new VueRouter({
     ]
 });
 
+Firebase.auth().onAuthStateChanged( user => {
+    if (user) {
+        store.dispatch('signIn', user);
+        router.push('/collection')
+    }else{
+        router.replace('/account')
+    }
+})
+
 new Vue({
   el: '#app',
   router,
