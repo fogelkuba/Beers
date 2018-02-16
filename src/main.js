@@ -5,7 +5,7 @@ import { Firebase } from './Firebase';
 
 Vue.use(VueRouter);
 
-import store from './store';
+import store from './store/index.js';
 
 import Discover from './components/Discover.vue';
 import ItemDetails from './components/ItemDetails.vue';
