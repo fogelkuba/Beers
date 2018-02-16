@@ -24,11 +24,6 @@
                 item: {}
             }
         },
-        // methods: {
-        //     itemRouter(){
-        //         router.push( {path: `/discover/${this.item.name}`} )
-        //     }
-        // },
         created(){
             this.item = this.passedItem
         }
