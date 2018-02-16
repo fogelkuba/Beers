@@ -5,7 +5,7 @@
         </div>
         <div class="col-md-12">
             <div class="row">
-                <Beer
+                <Item
                     v-for="(item, index) in items[0]"
                     :key="index"
                     :passed-item="item"
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-    import Beer from './Beer.vue';
+    import Item from './Item.vue';
 
     export default {
         data(){
@@ -40,7 +40,7 @@
             this.fetchItems();
         },
         components: {
-            Beer
+            Item
         }
     }
 </script>

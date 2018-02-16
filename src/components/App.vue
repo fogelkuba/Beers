@@ -6,7 +6,7 @@
         <div class="navigation">
             <router-link class="link" to="/discover">Discover</router-link>
             <router-link class="link" to="/collection">Collection</router-link>
-            <router-link class="link" to="/login">Login</router-link>
+            <router-link class="link" to="/account">Account</router-link>
         </div>
     </div>
   </div>

@@ -3,6 +3,9 @@ import App from './components/App.vue'
 import VueRouter from 'vue-router';
 
 import Discover from './components/Discover.vue';
+import ItemDetails from './components/ItemDetails.vue';
+import Collection from './components/Collection.vue';
+import Account from './components/Account.vue';
 
 Vue.use(VueRouter);
 
@@ -10,8 +13,9 @@ const router = new VueRouter({
     mode: 'history',
     routes: [
         {path: '/discover', component: Discover},
-        // {path: '/collection', component: Collection},
-        // {path: '/login', component: Login},
+        {path: '/discover/details', component: ItemDetails},
+        {path: '/collection', component: Collection},
+        {path: '/account', component: Account}
     ]
 });
 

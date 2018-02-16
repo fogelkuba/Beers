@@ -12,6 +12,10 @@ h1{
 h1 > span {
     color: rgb(223, 201, 6);
 }
+a{
+    text-decoration: none;
+    text-transform: uppercase !important;    
+}
 .navigation{
     display: flex;
     flex-direction: row;
@@ -22,8 +26,6 @@ h1 > span {
 .navigation > a{
     margin: 0 10px;
     color: rgb(223, 201, 6);
-    text-decoration: none;
-    text-transform: uppercase;
     letter-spacing: 2px;
 }
 .navigation > a:hover{
