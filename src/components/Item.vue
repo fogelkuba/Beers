@@ -4,7 +4,9 @@
             <router-link :to="{ path: `/discover/details`}">
                 <div class="item-card">
                     <div class="card-block">
-                        <h3 class="card-title">{{item.name}}</h3>
+                        <div class="card-title-container">
+                            <h3 class="card-title">{{item.name}}</h3>
+                        </div>
                         <img class="item-image" :src="item.image_url" :alt="item.name">
                         <hr>
                         <p class="item-describtion">"{{item.tagline}}"</p>

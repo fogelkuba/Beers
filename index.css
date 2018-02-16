@@ -13,8 +13,7 @@ h1 > span {
     color: rgb(223, 201, 6);
 }
 a{
-    text-decoration: none;
-    text-transform: uppercase !important;    
+    text-decoration: none !important;
 }
 .navigation{
     display: flex;
@@ -48,10 +47,18 @@ h2{
 .card-block{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
+    position: relative;
 }
+.card-title-container{
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
 .card-title{
     font-weight: bold;
     width: 100%;
@@ -83,4 +90,6 @@ h2{
 .item-image{
     max-height: 150px;
     margin: 25px auto;
+    margin-bottom: 0;
+
 }
