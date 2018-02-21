@@ -24,7 +24,6 @@
                     <h4>Method:</h4>
                     <ul>{{item.method}}</ul>
 
-
                 </div>
             </div>
         </div>
